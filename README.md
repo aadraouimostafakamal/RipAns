@@ -1,0 +1,2 @@
+# RipAns
+RipAns ChatApp (RMI)
