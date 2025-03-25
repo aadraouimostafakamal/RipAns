@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" />
+    <title>RipAns - RMI Java Chat Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-section {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-gallery-item {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .image-gallery-item:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./assets/logo.svg" alt="RipAns Logo" class="h-10 w-10 mr-3">
+                <h1 class="text-2xl font-bold text-blue-600">RipAns</h1>
+            </div>
+            <div class="space-x-4">
+                <a href="#features" class="hover:text-blue-600 transition">Features</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
+                <a href="#developers" class="hover:text-blue-600 transition">Developers</a>
+                <a href="#download"
+                    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white animate-section">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h1 class="text-5xl font-bold mb-6">RipAns Chat Application</h1>
+            <p class="text-xl mb-8">Seamless Communication with Java RMI Technology</p>
+            <div class="space-x-4">
+                <a href="#download"
+                    class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">Get
+                    Started</a>
+                <a href="#features"
+                    class="border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">Learn
+                    More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white animate-section">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray-100 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4 text-blue-600">🌐</div>
+                    <h3 class="text-xl font-semibold mb-4">RMI Powered</h3>
+                    <p>Leveraging Java Remote Method Invocation for robust network communication.</p>
+                </div>
+                <div class="feature-card bg-gray-100 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4 text-green-600">💬</div>
+                    <h3 class="text-xl font-semibold mb-4">Real-time Messaging</h3>
+                    <p>Instant message delivery with low latency and high reliability.</p>
+                </div>
+                <div class="feature-card bg-gray-100 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4 text-purple-600">🔒</div>
+                    <h3 class="text-xl font-semibold mb-4">Secure Communication</h3>
+                    <p>End-to-end encryption to protect your conversations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100 animate-section">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">About RipAns</h2>
+            <p class="text-xl mb-8">RipAns is a cutting-edge chat application built using Java RMI, designed to provide
+                seamless, secure, and efficient communication across networks.</p>
+            <div class="bg-white shadow-lg rounded-lg p-8">
+                <h3 class="text-2xl font-semibold mb-4">Technology Stack</h3>
+                <div class="flex justify-center space-x-6">
+                    <div class="bg-gray-100 px-4 py-2 rounded">Java</div>
+                    <div class="bg-gray-100 px-4 py-2 rounded">RMI</div>
+                    <div class="bg-gray-100 px-4 py-2 rounded">Network Programming</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50 animate-section">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Application Screenshots</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="image-gallery-item">
+                    <img src="./assets/1.png" alt="RipAns Chat Interface" class="w-full rounded-lg shadow-lg">
+                    <p class="text-center mt-4">Main Chat Interface</p>
+                </div>
+                <div class="image-gallery-item">
+                    <img src="./assets/4.png" alt="RipAns User List" class="w-full rounded-lg shadow-lg">
+                    <p class="text-center mt-4">User List View</p>
+                </div>
+                <div class="image-gallery-item">
+                    <img src="./assets/2.png" alt="RipAns Settings" class="w-full rounded-lg shadow-lg">
+                    <p class="text-center mt-4">Application Settings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developers Section -->
+    <section id="developers" class="py-16 bg-gray-900 text-white animate-section">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Meet the Developers</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <img src="./assets/rip_logo.jpg" alt="Developer 1"
+                        class="w-40 h-40 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2">AADRAOUI Mostafa-Kamal</h3>
+                    
+                    <div class="flex justify-center space-x-4 text-2xl">
+                        <a href="mailto:mostafakamalaadraoui@gmail.com" target="_blank" class="text-blue-400 hover:text-blue-300">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mostafa-kamal-aadraoui-5424bb2b7/" target="_blank" class="text-blue-400 hover:text-blue-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/aadraouimostafakamal" target="_blank" class="text-blue-400 hover:text-blue-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <img src="./assets/ans_logo.jpg" alt="Developer 2"
+                        class="w-40 h-40 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2">Anass El Hannaoui</h3>
+                    
+                    <div class="flex justify-center space-x-4 text-2xl">
+                        <a href="mailto:anashannaoui234@gmail" class="text-blue-400 hover:text-blue-300">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anasselhannaoui/" target="_blank" class="text-blue-400 hover:text-blue-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/anass-elhannaoui" target="_blank" class="text-blue-400 hover:text-blue-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white animate-section">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-8">Download RipAns</h2>
+            <p class="text-xl mb-12">Get started with RipAns and experience seamless communication today!</p>
+            <div class="space-x-4">
+                <a href="#"
+                    class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition">
+                    Download for Windows
+                </a>
+                <a href="#"
+                    class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition">
+                    Download for macOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="space-x-4 mb-4">
+                <a href="#features" class="hover:text-blue-400 transition">Features</a>
+                <a href="#gallery" class="hover:text-blue-400 transition">Gallery</a>
+                <a href="#developers" class="hover:text-blue-400 transition">Developers</a>
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#download" class="hover:text-blue-400 transition">Download</a>
+            </div>
+            <p>&copy; 2025 RipAns. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animations
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-section');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
